@@ -1,0 +1,13 @@
+﻿@model Project.ViewModels.Account.RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h1>Register</h1>
+
+<form asp-action="Register" method="post">
+    <input asp-for="Email" />
+    <input asp-for="Password" />
+    <input asp-for="ConfirmPassword"/>
+    <input type="submit" value="register"/>
+</form>
